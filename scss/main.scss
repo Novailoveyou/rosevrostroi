@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import 'normalize';
+@import 'config';
+@import 'animations';
+@import 'mixin';
+@import 'utility';
+@import 'general';
+@import 'menu';
+@import 'header';
+@import 'buttons';
+
+// IOS support to prevent it from zooming when User clicks on the inputs
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  select:focus,
+  textarea:focus,
+  input:focus {
+    font-size: 16px;
+    background: #fff;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  select,
+  textarea,
+  input {
+    font-size: 16px;
+  }
+}
+
+@import 'mobile';

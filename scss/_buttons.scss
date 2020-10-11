@@ -1,0 +1,66 @@
+// Buttons
+.btn {
+  display: block;
+  width: 100%;
+  -webkit-border-radius: 0.3125rem;
+  -moz-border-radius: 0.3125rem;
+  border-radius: 0.3125rem;
+  text-align: center;
+  color: set-text-color($color-primary);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transform: scale(1);
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+  /* identical to box height */
+
+  text-align: center;
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+.btn-cta {
+  background-color: $color-primary;
+  padding-top: 1.6875rem;
+  padding-bottom: 1.6875rem;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -150%;
+    // left: -8rem;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      355.79deg,
+      #ffffff 26%,
+      rgba(255, 255, 255, 0) 37.41%
+    );
+    opacity: 0.3;
+    transform: rotate(-57deg);
+    -webkit-animation: 3.3s linear 0s infinite normal shine;
+    animation: 3.3s linear 0s infinite normal shine;
+  }
+}
+
+.btn-call {
+  background-color: $color-success--dimmer;
+  padding-top: 1.6875rem;
+  padding-bottom: 1.6875rem;
+}
+
+.btn-submit-form {
+  background-color: $color-primary;
+  padding: 1rem;
+  border: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  border-radius: 3px;
+}
