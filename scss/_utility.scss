@@ -38,8 +38,17 @@
   line-height: 15px;
 }
 
+.p-bigger {
+  font-size: 25px;
+  line-height: 30px;
+}
+
 .text-highlight--color-primary {
   color: $color-primary;
+}
+
+.text-highlight--color-dimmer{
+  color: $color-text-dim;
 }
 
 .text-highlight--color-success {
@@ -69,5 +78,11 @@
   font-style: normal;
   font-weight: bold;
   font-size: 1.125rem;
-  line-height: 1.375rem;
+  line-height: 1.875rem;
+}
+
+.h2--bigger {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 37px;
 }

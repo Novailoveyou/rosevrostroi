@@ -8,6 +8,56 @@
 
 // Tablets & Small Laptops
 @include mediaMd {
+  .btn{
+    max-width: 293px;
+  }
+  .h1{
+    font-size: 28px;
+    line-height: 34px;
+  }
+  .h2{
+    font-size: 30px;
+    line-height: 37px;
+  }
+  .p{
+    font-size: 23px;
+  line-height: 28px;
+  }
+  .full-screen-picture{
+    background-image: url(../img/bg-header.jpg);
+    background-position-x: 75%;
+  }
+  .mountains {
+    & svg {
+      max-height: 8.75rem;
+    }
+  }
+  .centered-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .centered-content__title{
+    max-width: 653px;
+  }
+  .content__text{
+    max-width: 555px;
+  }
+  .content__cards{
+    display: flex;
+    flex-wrap: wrap;
+    // column-count: 3;
+    // column-gap: 38px;
+    // column-width: 346px;
+  }
+  .cards__card{
+    width: 30%;
+    margin-right: 35px;
+    // &:nth-last-child(1){
+    //   margin-right: 0;
+    // }
+  }
 }
 
 // Smartphones
