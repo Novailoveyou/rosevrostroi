@@ -16,6 +16,29 @@ function insertAfter(referenceNode, newNode) {
   referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
 }
 
+const mainCta = document.getElementById('main-cta');
+const footer = document.getElementById('section-footer');
+const orderCta = document.querySelectorAll('.btn-cta--order');
+
+mainCta.addEventListener('click', (e) => {
+
+  footer.scrollIntoView({
+    behavior: 'smooth',
+  });
+
+  e.preventDefault();
+})
+
+orderCta.forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    footer.scrollIntoView({
+      behavior: 'smooth',
+    });
+  
+    e.preventDefault();
+  })
+});
+
 // Menu
 // navItemLinks[0].addEventListener('click', (e) => {
 //   // window.location = "#about";
