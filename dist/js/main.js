@@ -69,3 +69,16 @@ orderCta.forEach(btn => {
 //   menuToggler.checked = false;
 //   e.preventDefault();
 // });
+
+// Insert bg image
+function insertBg(){
+  const bgImage = document.querySelector('.full-screen-picture');
+  console.log(window.screen.availWidth);
+  if(window.screen.availWidth < 768){
+    bgImage.style.backgroundImage = `url('../dist/img/bg-header--mobile.jpg')`;
+  }else{
+    bgImage.style.backgroundImage = `url('../dist/img/bg-header.jpg')`;
+  }
+};
+
+insertBg();

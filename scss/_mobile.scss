@@ -65,6 +65,11 @@
       font-size: 12px;
       line-height: 15px;
     }
+    & .cards__card{
+      &:nth-child(3n){
+        margin-right: 0;
+      }
+    }
   }
 
   .cards__card{
@@ -128,6 +133,20 @@
       background: #FFFFFF;
       box-shadow: 0px 0px 30px 30px rgba(0, 0, 0, 0.03);
     }
+  }
+
+  .section-footer{
+    & .container{
+      display: flex;
+      justify-content: center;
+    }
+    & .section__left{
+      margin-right: 5%;
+    }
+    display: flex;
+  }
+  .btn-submit-form{
+    max-width: 100%;
   }
 }
 
