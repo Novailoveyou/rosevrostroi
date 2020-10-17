@@ -364,6 +364,9 @@ template {
 .text-highlight--weight-bold {
   font-weight: bold; }
 
+.text-highlight--weight-light {
+  font-weight: 300; }
+
 .text-highlight--bg-primary {
   padding: 0.2rem;
   background-color: #ef5600;
@@ -531,7 +534,11 @@ main {
   margin-right: 11px; }
 
 .list__item {
-  display: flex; }
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem; }
+  .list__item .p {
+    margin: 0; }
 
 .content__tags {
   display: flex;
@@ -885,6 +892,11 @@ header {
     background-position-x: 75%; }
   .mountains svg {
     max-height: 8.75rem; }
+  .blurry-logo-centered {
+    left: 70%; }
+    .blurry-logo-centered svg {
+      width: 634px;
+      height: 100%; }
   .centered-content {
     display: flex;
     flex-direction: column;
@@ -893,10 +905,43 @@ header {
   .centered-content__title {
     max-width: 653px; }
   .content__text {
-    max-width: 555px; }
+    max-width: 41rem; }
   .content__cards {
     display: flex;
     flex-wrap: wrap; }
+  .section-cards .p.p-lighter {
+    font-size: 12px;
+    line-height: 15px; }
   .cards__card {
-    width: 30%;
-    margin-right: 35px; } }
+    width: 28%;
+    margin-right: 35px; }
+  .section-testimonials .content__cards {
+    justify-content: center; }
+  .section-testimonials .cards__card {
+    width: 45%; }
+    .section-testimonials .cards__card:nth-child(even) {
+      margin-right: 0; }
+    .section-testimonials .cards__card .card__text {
+      text-align: center; }
+      .section-testimonials .cards__card .card__text .p {
+        font-size: 16px;
+        line-height: 20px; }
+  .section-showcase .card__title .p {
+    font-size: 16px;
+    line-height: 20px; }
+  .section-showcase .card__price .p {
+    font-size: 16px;
+    line-height: 20px; }
+  .section__title .p.p-lighter {
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 30px; }
+  .section-compare {
+    padding-bottom: 8.75rem; }
+    .section-compare .container {
+      display: flex; }
+    .section-compare .cards__card {
+      width: 100%;
+      max-width: 512px;
+      background: #FFFFFF;
+      box-shadow: 0px 0px 30px 30px rgba(0, 0, 0, 0.03); } }
