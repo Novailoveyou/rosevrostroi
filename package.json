@@ -1,15 +1,15 @@
 {
-  "name": "ipe",
+  "name": "rosevrostroi",
   "version": "1.0.0",
-  "description": "Высшее образование дистанционно без ЕНТ и ЕГЭ",
+  "description": "Привезем грунты, щебень, песок напрямую с карьера без посредников",
   "main": "index.html",
   "homepage": "",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "sass": "node-sass -w src/scss/ -o src/css/ --recursive",
     "deploy": "gh-pages -d dist",
     "start": "node server.js",
-    "dev": "rm -rf ./development && rm -rf ./.cache && parcel dist/index.html --out-dir development -p 3000",
-    "build": "parcel build dist/index.html --out-dir dist --public-url ./"
+    "dev": "rm -rf ./development && rm -rf ./.cache && parcel src/index.html --out-dir development -p 3000",
+    "build": "parcel build src/index.html --out-dir dist --public-url ./"
   },
   "author": "Novailoveyou",
   "license": "MIT",
@@ -29,9 +29,9 @@
     "npm": "6.x"
   },
   "devDependencies": {
-    "@babel/core": "^7.11.6",
-    "@babel/plugin-transform-runtime": "^7.11.5",
-    "@babel/runtime-corejs2": "^7.11.2",
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/runtime-corejs2": "^7.12.1",
     "parcel-bundler": "^1.12.4",
     "sass": "^1.27.0"
   }

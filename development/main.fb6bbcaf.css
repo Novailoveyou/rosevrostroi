@@ -1,0 +1,9 @@
+.full-screen-picture {
+  background-image: url("/bg-header--mobile.a6b8c444.jpg"); }
+
+@media only screen and (min-width: 768px) {
+  .full-screen-picture {
+    background-image: url("/bg-header.28ba781d.jpg"); } }
+
+
+/*# sourceMappingURL=/main.fb6bbcaf.css.map */

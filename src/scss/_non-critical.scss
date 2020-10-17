@@ -1,0 +1,9 @@
+.full-screen-picture{
+  background-image: url('../img/bg-header--mobile.jpg');
+}
+
+@media only screen and (min-width: 768px) {
+  .full-screen-picture{
+    background-image: url('../img/bg-header.jpg');
+  }
+}
