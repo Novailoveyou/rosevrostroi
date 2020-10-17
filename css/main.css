@@ -758,7 +758,6 @@ header {
 
 .full-screen-picture {
   background-color: #3e1600;
-  background-image: url(../img/bg-header--mobile.jpg);
   width: 100vw;
   height: 100vh;
   /* Center and scale the image nicely */
@@ -912,6 +911,8 @@ header {
   .section-cards .p.p-lighter {
     font-size: 12px;
     line-height: 15px; }
+  .section-cards .cards__card:nth-child(3n) {
+    margin-right: 0; }
   .cards__card {
     width: 28%;
     margin-right: 35px; }
@@ -944,4 +945,13 @@ header {
       width: 100%;
       max-width: 512px;
       background: #FFFFFF;
-      box-shadow: 0px 0px 30px 30px rgba(0, 0, 0, 0.03); } }
+      box-shadow: 0px 0px 30px 30px rgba(0, 0, 0, 0.03); }
+  .section-footer {
+    display: flex; }
+    .section-footer .container {
+      display: flex;
+      justify-content: center; }
+    .section-footer .section__left {
+      margin-right: 5%; }
+  .btn-submit-form {
+    max-width: 100%; } }
