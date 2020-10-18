@@ -39,6 +39,8 @@ mainCta.addEventListener('click', (e) => {
   userNameModule.focus();
 
   document.body.addEventListener('click', closeModule);
+
+  e.preventDefault();
 })
 
 // Open module if any order btn is clicked
@@ -49,6 +51,8 @@ orderCta.forEach(btn => {
     moduleForm.classList.add('show');
     userNameModule.focus();
     document.body.addEventListener('click', closeModule);
+
+    e.preventDefault();
   })
 });
 //  /Handle module
