@@ -1,4 +1,3 @@
 # integrate animations on scroll
-# make desktop version
 # check on paddings&margins
 # switch pxs to rems
