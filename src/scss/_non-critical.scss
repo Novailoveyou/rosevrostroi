@@ -1,11 +1,11 @@
 .full-screen-picture{
   background-image: url('../img/bg-header--mobile.jpg');
-  background-image: url('../img/bg-header--mobile.webp');
+  // background-image: url('../img/bg-header--mobile.webp');
 }
 
 @media only screen and (min-width: 768px) {
   .full-screen-picture{
     background-image: url('../img/bg-header.jpg');
-    background-image: url('../img/bg-header.webp');
+    // background-image: url('../img/bg-header.webp');
   }
 }
