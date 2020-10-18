@@ -1,5 +1,7 @@
 header {
   color: #fff;
+  position: relative;
+  z-index: 2;
 }
 
 .full-screen-picture {
@@ -33,11 +35,6 @@ header {
   display: flex;
   justify-content: space-between;
   padding-top: 1.6875rem;
-}
-
-.nav--desktop,
-.heading__number {
-  display: none;
 }
 
 .centered-content__title {

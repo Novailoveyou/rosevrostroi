@@ -18,7 +18,9 @@
   /* identical to box height */
 
   text-align: center;
-
+  
+  -webkit-tap-highlight-color: transparent;
+  
   &:active {
     transform: scale(0.98);
   }

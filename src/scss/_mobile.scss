@@ -8,6 +8,64 @@
 
 // Tablets & Small Laptops
 @include mediaMd {
+  .nav--mobile{
+    display: none;
+  }
+
+  // Menu
+  .nav--desktop,
+  .heading__number{
+    display: block;
+  }
+
+  .nav--desktop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+
+  .nav--desktop__nav-list{
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-list__nav-item{
+    display: flex;
+    margin-right: 21px;
+    &:nth-last-child(1){
+      margin-right: 0;
+    }
+  }
+
+  .nav-item__link{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    &.active{
+      color: $color-primary;
+      border-bottom: 2px solid $color-primary;
+    }
+  }
+  
+  .heading__number{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  @media only screen and (max-width: 835px) {
+    .heading__number{
+      font-size: 2.3vw;
+    }
+  }
+
   .btn{
     max-width: 293px;
   }
@@ -73,8 +131,9 @@
   }
 
   .cards__card{
-    width: 28%;
-    margin-right: 35px;
+    // width: 28%;
+    flex: 0 0 30.333333%;
+    margin-right: 3%;
     // &:nth-last-child(1){
     //   margin-right: 0;
     // }
@@ -85,7 +144,8 @@
       justify-content: center;
     }
     & .cards__card{
-      width: 45%;
+      flex: 0 0 48%;
+      margin-right: 2.5%;
       &:nth-child(even){
         margin-right: 0;
       }
@@ -108,7 +168,13 @@
     }
     & .card__price{
       & .p{
-        font-size: 16px;
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+    & .card__text{
+      & .p{
+        font-size: 14px;
         line-height: 20px;
       }
     }
@@ -147,6 +213,36 @@
   }
   .btn-submit-form{
     max-width: 100%;
+  }
+
+  // Module
+  .module-form{
+    &.show{
+      display: block;
+    }
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0, .5);
+    z-index: 99;
+    & .form-primary{
+      margin: 0;
+      padding: 1.5rem;
+      position: absolute;
+      width: 50%;
+      max-width: 30rem;
+      height: 35%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%,);
+      border-radius: 27px 27px 27px 27px;
+      & .h2{
+        margin-top: 0;
+      }
+    }
   }
 }
 

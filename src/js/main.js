@@ -1,4 +1,5 @@
 import '../scss/_non-critical.scss';
+import '../scss/main.scss';
 
 const userDevice = window.navigator.userAgent;
 
@@ -18,56 +19,49 @@ function insertAfter(referenceNode, newNode) {
   referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
 }
 
+// Handle module
 const mainCta = document.getElementById('main-cta');
-const footer = document.getElementById('section-footer');
 const orderCta = document.querySelectorAll('.btn-cta--order');
+const moduleForm = document.getElementById('module-form');
+const userNameModule = document.getElementById('user-name-module');
 
+function closeModule(e){
+  if(moduleForm.classList.contains('show') && e.target.contains(moduleForm) && e.target === moduleForm){
+    moduleForm.classList.remove('show');
+    document.body.removeEventListener('click', closeModule);
+  }
+}
+
+// Open module if mainCta is clicked
 mainCta.addEventListener('click', (e) => {
 
-  footer.scrollIntoView({
-    behavior: 'smooth',
-  });
+  moduleForm.classList.add('show');
+  userNameModule.focus();
 
-  e.preventDefault();
+  document.body.addEventListener('click', closeModule);
 })
 
+// Open module if any order btn is clicked
 orderCta.forEach(btn => {
+
   btn.addEventListener('click', (e) => {
-    footer.scrollIntoView({
-      behavior: 'smooth',
-    });
   
-    e.preventDefault();
+    moduleForm.classList.add('show');
+    userNameModule.focus();
+    document.body.addEventListener('click', closeModule);
+  })
+});
+//  /Handle module
+
+// Menu
+const menuToggler = document.getElementById('menu-toggle');
+const navItemLinks = document.querySelectorAll('.nav-item__link');
+menuToggler.addEventListener('click', function menuIsOpened() {
+  navItemLinks.forEach(link => {
+    link.addEventListener('click', function linkIsClicked() {
+      menuToggler.checked = false;
+      link.removeEventListener('click', linkIsClicked);
+    })
   })
 });
 
-// Menu
-// navItemLinks[0].addEventListener('click', (e) => {
-//   // window.location = "#about";
-//   const aboutSection = document.getElementById('about');
-//   aboutSection.scrollIntoView({
-//     behavior: 'smooth',
-//   });
-//   menuToggler.checked = false;
-//   e.preventDefault();
-// });
-
-// navItemLinks[1].addEventListener('click', (e) => {
-//   // window.location = "#partners";
-//   const partnersSection = document.getElementById('partners');
-//   partnersSection.scrollIntoView({
-//     behavior: 'smooth',
-//   });
-//   menuToggler.checked = false;
-//   e.preventDefault();
-// });
-
-// navItemLinks[2].addEventListener('click', (e) => {
-//   // window.location = "#trusted-by";
-//   const trustedBySection = document.getElementById('trusted-by');
-//   trustedBySection.scrollIntoView({
-//     behavior: 'smooth',
-//   });
-//   menuToggler.checked = false;
-//   e.preventDefault();
-// });
