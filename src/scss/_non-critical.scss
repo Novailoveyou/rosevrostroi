@@ -9,3 +9,76 @@
     // background-image: url('../img/bg-header.webp');
   }
 }
+
+// Absolute pictures
+.desktop-picture-rubble{
+  background-image: url('../img/Щебень.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 208px;
+  height: 100%;
+  z-index: -5;
+}
+
+.desktop-picture-sand{
+  background-image: url('../img/Песок.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  max-width: 225px;
+  height: 100%;
+  z-index: -5;
+}
+
+// .desktop-picture-roboarm{
+//   background-image: url('../img/Ковш.png');
+//   background-repeat: no-repeat;
+//   background-size: contain;
+//   width: 100%;
+//   max-width: 406px;
+//   position: absolute;
+//   top: 14rem;
+//   right: 0;
+//   height: 100%;
+//   z-index: 5;
+// }
+
+.desktop-picture-old-track{
+  background-image: url('../img/Камаз.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  position: absolute;
+  top: 20rem;
+  left: 2%;
+  max-width: 675px;
+  height: 100%;
+  z-index: 5;
+}
+
+.desktop-picture-pro-track{
+  background-image: url('../img/Скания.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  position: absolute;
+  top: 46rem;
+  right: 0;
+  max-width: 675px;
+  height: 100%;
+  z-index: 5;
+}
+
+@media only screen and (max-width: 1171px) {
+  .desktop-picture-old-track,
+  .desktop-picture-pro-track{
+    z-index: -1;
+  }
+}
