@@ -90,6 +90,13 @@
       max-height: 8.75rem;
     }
   }
+  .section-showcase--rubble{
+    & .mountains--bottom{
+      & svg{
+        max-height: 8.75rem;
+      }
+    }
+  }
   .blurry-logo-centered{
     left: 70%;
     & svg{
