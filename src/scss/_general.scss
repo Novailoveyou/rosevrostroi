@@ -66,12 +66,22 @@ main {
 .section-showcase {
   & .cards__card{
     padding-top: 145px;
+    position: relative;
+    padding-bottom: 5rem;
+
+    & .centered-content__btn{
+      position: absolute;
+      bottom: 1.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 85%;
+    }
   }
 }
 
-.section-showcase--priming{
-  padding-bottom: 15vh;
-}
+// .section-showcase--priming{
+//   padding-bottom: 15vh;
+// }
 
 .section-testimonials {
   background-color: $secondary-color;
