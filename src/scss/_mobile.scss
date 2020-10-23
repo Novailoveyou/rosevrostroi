@@ -28,6 +28,8 @@
 
   .nav--desktop__nav-list {
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0;
     padding: 0;
   }
@@ -44,9 +46,15 @@
     font-weight: bold;
     font-size: 14px;
     line-height: 17px;
+    text-align: center;
+    @include easeOut;
     &.active {
       color: $color-primary;
       border-bottom: 2px solid $color-primary;
+    }
+    &:hover,
+    &:focus{
+      color: $color-primary;
     }
   }
 
@@ -60,9 +68,9 @@
     line-height: 30px;
   }
 
-  @media only screen and (max-width: 835px) {
+  @media only screen and (max-width: 949px) {
     .heading__number {
-      font-size: 2.3vw;
+      font-size: 2.2vw;
     }
   }
 
