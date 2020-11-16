@@ -1,5 +1,5 @@
 .nav--desktop,
-.heading__number{
+.heading__number {
   display: none;
 }
 
@@ -70,7 +70,7 @@
   }
 
   &::before {
-    content: '\00d7';
+    content: "\00d7";
     display: block;
     margin: 0 auto;
     padding-right: 0.4rem;

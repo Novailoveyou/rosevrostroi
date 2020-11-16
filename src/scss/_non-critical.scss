@@ -1,18 +1,18 @@
-.full-screen-picture{
-  background-image: url('../img/bg-header--mobile.jpg');
+.full-screen-picture {
+  background-image: url("../img/bg-header--mobile.jpg");
   // background-image: url('../img/bg-header--mobile.webp');
 }
 
 @media only screen and (min-width: 768px) {
-  .full-screen-picture{
-    background-image: url('../img/bg-header.jpg');
+  .full-screen-picture {
+    background-image: url("../img/bg-header.jpg");
     // background-image: url('../img/bg-header.webp');
   }
 }
 
 // Absolute pictures
-.desktop-picture-rubble{
-  background-image: url('../img/Щебень.png');
+.desktop-picture-rubble {
+  background-image: url("../img/Щебень.png");
   background-repeat: no-repeat;
   background-size: auto;
   position: absolute;
@@ -24,8 +24,8 @@
   z-index: -5;
 }
 
-.desktop-picture-sand{
-  background-image: url('../img/Песок.png');
+.desktop-picture-sand {
+  background-image: url("../img/Песок.png");
   background-repeat: no-repeat;
   background-size: auto;
   position: absolute;
@@ -37,8 +37,8 @@
   z-index: -5;
 }
 
-.desktop-picture-roboarm{
-  background-image: url('../img/Ковш.png');
+.desktop-picture-roboarm {
+  background-image: url("../img/Ковш.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
@@ -50,8 +50,8 @@
   z-index: 1;
 }
 
-.desktop-picture-old-track{
-  background-image: url('../img/Камаз.png');
+.desktop-picture-old-track {
+  background-image: url("../img/Камаз.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
@@ -63,8 +63,8 @@
   z-index: 5;
 }
 
-.desktop-picture-pro-track{
-  background-image: url('../img/Скания.png');
+.desktop-picture-pro-track {
+  background-image: url("../img/Скания.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
@@ -78,14 +78,13 @@
 
 @media only screen and (max-width: 1171px) {
   .desktop-picture-old-track,
-  .desktop-picture-pro-track{
+  .desktop-picture-pro-track {
     z-index: -1;
   }
 }
 
 @media only screen and (max-width: 1630px) {
-  .cards__card{
+  .cards__card {
     z-index: 2;
   }
 }
-

@@ -1,7 +1,7 @@
 header {
   color: #fff;
   position: relative;
-  z-index: 2;
+  z-index: 10;
 }
 
 .full-screen-picture {
@@ -17,7 +17,7 @@ header {
   z-index: 0;
 
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     right: 0;
